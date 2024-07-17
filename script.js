@@ -87,7 +87,7 @@ btnHoldDiceEl.addEventListener('click', function () {
     document.querySelector(`#score--${activePlayer}`).textContent =
       bothScore[activePlayer];
     //check if 100 or not
-    if (bothScore[activePlayer] >= 50) {
+    if (bothScore[activePlayer] >= 70) {
       // finish the game
       playing = false;
       document
