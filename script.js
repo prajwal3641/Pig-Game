@@ -73,7 +73,6 @@ btnRollDiceEl.addEventListener('click', function () {
       document.querySelector(`#current--${activePlayer}`).textContent = score;
     } else {
       // switch to next player
-
       switchPlayer();
     }
   }
@@ -87,7 +86,7 @@ btnHoldDiceEl.addEventListener('click', function () {
     document.querySelector(`#score--${activePlayer}`).textContent =
       bothScore[activePlayer];
     //check if 100 or not
-    if (bothScore[activePlayer] >= 70) {
+    if (bothScore[activePlayer] >= 80) {
       // finish the game
       playing = false;
       document
